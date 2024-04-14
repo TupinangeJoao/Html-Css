@@ -1,0 +1,10 @@
+
+        ] Aula de cores [
+
+# Circulo Cromático:
+É utilizado para harmonizar cores.
+Primarias: Vermelho, Amarelo e Azul;
+
+Secundarias: Laranja, Violeta e Verde;
+
+Cores Terciarias, união entre as cores primarias e secundarias, entre que for criar uma cor nesse nivel, primeiro se usa a cor primaria e depois as secundarias  

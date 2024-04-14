@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem Dinamica</title>
+</head>
+<body>
+    <h1>Imagem Dinamicas!</h1>
+    <h2>Consegue ver a imagem completa, segue abaixo a imagem disponivel. <br> Tente aumentar e/ou dimunuir o tamanho da janela. <br> E veja a imagem se adaptar.</h2>
+        <picture>
+            <source media="(max-width: 760px)" srcset="imagens/imagem-p.jpg" type="image/jpg">
+            <source media="(max-width: 1300px)" srcset="imagens/imagem-m.jpg" type="image/jpg">
+            <img src="imagens/imagem-g.jpg" alt="Paisagem">
+        </picture>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags de Agrupamento</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav {
+            background-color: lightgrey;
+            padding: 3px;
+            width: 50vw;
+        }
+
+        nav > a {
+        display: none;
+            
+        }
+
+        nav:hover > a {
+            display: block;
+            text-decoration: none;
+            text-decoration: underline;
+            color: rgb(250, 0, 0);
+            font-weight: bold;
+            margin-top: 5%;
+        }
+
+        main {
+            background-color: whitesmoke;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        article {
+            background-color: lightgray;
+            padding: 5px;
+        }
+
+        aside {
+            background-color: rgb(185, 185, 185);
+        }
+
+        footer {
+            background-color: black;
+            color: rgb(172, 172, 172);
+            margin: 0px;
+            padding: 1px;
+            text-align: center;
+            }
+
+        footer > p {
+            margin: 4px;
+        }    
+    </style>
+</head>
+
+<body>
+    <header> <!-- Cabeçalho -->
+        <h1>Meu Site</h1>
+        <nav>
+            <p>Lista</p>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main> <!-- Corpo -->
+        <section class="assuntos">
+
+        </section>
+        <section class="noticias">
+            <article>
+                <h2>Notícias do Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident enim ipsam fuga, odit vel vero
+                    cum nobis unde saepe vitae architecto porro totam mollitia culpa illum optio rem. Aliquid,
+                    voluptatibus!</p>
+                <aside>
+                    <p>Escrito por Tuppa</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer> <!-- Rodapé -->
+        <p>Desenvolvido pelo CursoemVideo</p>
+    </footer>
+</body>
+
+</html>

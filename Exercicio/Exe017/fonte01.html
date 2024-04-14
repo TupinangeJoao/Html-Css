@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            /*
+            Medidas Absolutas
+            cm (centímetro), mm (milímetro), in (polegadas), px (pixel), pt (ponto), pc (paika)
+            16px é a largura padrão.
+            [ 1em é igual a 16px ]
+            RECOMENDAÇÃO OFICIAL USAR px E em, PREFERÊNCIALMENTE USE O em
+            Medidas Relativas
+            em (tam. atual da fonte), ex (tam. da Altura X), rem (root, equivalente ao padrão da fonte do Body), vw (view port, porcentagem da largura de tela) vh (mesmo que view port, porém equivalente a altura) e %
+            */
+            font-size: 1.1em;
+            /* lighert, normal, bold e bolder, além dos tamanhos de 100 a 900 */
+        }
+
+        h1{
+            /* shorthand font
+            - font-style -> font-weight -> font-size -> font-family */
+            font: italic bolder 3em 'Times';
+        }
+
+        h2 {
+            font: bold 2em 'Courier';
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, exercitationem voluptas, voluptate temporibus eos modi a vitae laudantium animi voluptatibus aliquid accusamus molestias quisquam culpa ea sit ipsam eum optio. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, atque voluptas minus rem iste ullam! Error officiis voluptates dolorum placeat consequatur vitae mollitia animi, quas earum, veniam nulla fugit aut!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt voluptatibus voluptates molestias esse qui itaque, veniam cum deserunt! Autem provident iusto ipsa vel doloribus. Itaque, illo sequi. Nesciunt, dicta dignissimos!</p>
+    <h2>Subtítulo do Exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quo autem consectetur illum, facere consequatur enim nihil laborum minima molestias! Suscipit incidunt neque ea, architecto ipsam quo sit nulla est.</p>
+
+</body>
+</html>
