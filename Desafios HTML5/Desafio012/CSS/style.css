@@ -28,14 +28,14 @@ header {
 
 header>h1 {
     font-family: "Passion One", sans-serif;
-    font-size: 3em;
+    font-size: 10vw;
     font-variant: small-caps;
 }
 
 header>h2 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: lighter;
-    font-size: 1.5em;
+    font-size: 1em;
     font-variant: small-caps;
 }
 
@@ -61,7 +61,7 @@ header>h2>a:hover {
 
 p {
     font-family: "Sriracha", cursive;
-    font-size: 1.5em;
+    font-size: 3.5vw;
     font-weight: 500;
     line-height: 2.2em;
 }
@@ -80,7 +80,7 @@ p {
     width: 350px;
     min-width: 45%;
     padding: 2%;
-    font-size: 1.6em;
+    font-size: 3.5vw;
 }
 
 .fundo02 {
@@ -97,12 +97,12 @@ p {
     width: 350px;
     min-width: 45%;
     padding: 2%;
-    font-size: 1.6em;
+    font-size: 3.5vw;
 }
 
 footer>p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1em;
+    font-size: 1vh;
     text-align: center;
     color: rgb(156, 155, 155);
 }
