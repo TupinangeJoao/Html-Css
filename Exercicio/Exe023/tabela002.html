@@ -1,22 +1,110 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uso de Tabelas Grandes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 1%;
+            background-color: lightblue;
+            text-decoration: underline overline yellow;
+        }
+
+        td,
+        th {
+            border: 1px solid black;
+            padding: 1%;
+        }
+
+        thead,
+        tfoot {
+            background-color: gray;
+            color: white;
+        }
+        
+        tbody > tr:nth-child(odd){ /*(impar) ou 2n-1 */
+            background-color: yellow;
+        }
+
+        tbody > tr:nth-child(even){ /*(par) ou 2n */
+            background-color: lightgray;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        .num {
+            text-align: right;
+        }
+    </style>
 </head>
+
 <body>
     <h1>Anatomia para Tabelas Grandes</h1>
-    
-        <!-- 
+
+    <!-- 
             ORDEM DAS TABELAS GRANDES
-            THEAD
+            caption -- Legenda das tabelas
+            THEAD -- cabeça
                 TR, TD, TH
-            TBODY
+            TBODY -- corpo
                 TR, TD, TH
-            TFOOT
+            TFOOT -- rodapé
                 TR, TD, TH
-        --> 
-    
+        -->
+    <table>
+        <caption>Populaçao das unid
+            ades federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num" style="color: yellow; width: 100px;"><strong>94.853.903</strong></td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.901.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">2.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">10.000.000</td>
+            </tr>
+        </tbody>
+    </table>
+    <p style="font-size: 2em;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam iste ratione assumenda obcaecati vel fugit debitis, ipsum aspernatur quam dolore id adipisci enim cupiditate! Recusandae nemo eligendi ipsa nam modi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae voluptate ab assumenda error aut cumque nostrum, corrupti nihil quibusdam nulla asperiores dignissimos quo tempora sed sint dicta aperiam deleniti! Aut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum expedita delectus vero qui autem inventore excepturi velit, minima vitae corrupti, molestiae numquam ipsa quasi aut facere reprehenderit unde, non sed. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa asperiores, optio sapiente facilis nemo nobis suscipit, alias voluptatum ratione sunt esse nulla obcaecati. Maxime quam sed corporis amet, qui unde?</p>
+    <p style="font-size: 2em;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam iste ratione assumenda obcaecati vel fugit debitis, ipsum aspernatur quam dolore id adipisci enim cupiditate! Recusandae nemo eligendi ipsa nam modi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae voluptate ab assumenda error aut cumque nostrum, corrupti nihil quibusdam nulla asperiores dignissimos quo tempora sed sint dicta aperiam deleniti! Aut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum expedita delectus vero qui autem inventore excepturi velit, minima vitae corrupti, molestiae numquam ipsa quasi aut facere reprehenderit unde, non sed. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa asperiores, optio sapiente facilis nemo nobis suscipit, alias voluptatum ratione sunt esse nulla obcaecati. Maxime quam sed corporis amet, qui unde?</p>
 </body>
+
 </html>
