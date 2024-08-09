@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula Forms</title>
+</head>
+<body>
+    <form action="page_processa_dados" method="post">
+    <fieldset>
+        <legend> Inscreva-se! </legend>
+        <label for="nome"> Nome: </label>
+        <input required type="text" id="nome" minlength="3" placeholder="Insira o seu nome">
+        <br>
+        <label for="email"> Email: </label>
+        <input required type="email" id="email" placeholder="descreva seu email.">
+        <br>
+        <label for="fone"> Número para contato:  </label>
+        <input required type="tel" name="fone" id="fone" placeholder="insira seu contato com ddd" minlength="11" maxlength="11">
+        <br>
+        <label for="data"> Data de Nascimento: </label>
+        <input required type="date" name="data" id="data">
+        <br>
+        <label for="msg"> Deixa a sua Mensagem: </label>
+        <textarea name="msg" cols="30" rows="4" id="msg" placeholder="Fala pra gente o que você achou da Jaguar"></textarea>
+    </fieldset>
+        <input style="align-items: center;" type="submit" value="Enviar">
+    </form>    
+</body>
+</html>
+
+<!-- 
+nome
+email
+telefone
+calendario
+data de nascimento
+texto livre
+submit
+ -->
