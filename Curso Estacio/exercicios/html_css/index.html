@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        .f1 {
+            margin: 2px;
+        }
+    </style>
+</head>
+<body>
+    <form action="pagina-processa-dados-do-form" method="post">
+        <fieldset class="f1">
+            <legend> Dados Gerais </legend>
+            <label for="nome">Nome:</label>
+            <input type="text" minlength="3" id="nome" required>
+            <br>
+            <label for="data_nascimento">Data de Nascimento:</label>
+            <input type="date"  id="data_nascimento">
+            <br>
+            <label for="cpf">CPF:</label>
+            <input type="text" minlength="11" maxlength="11" id="cpf">
+        </fieldset>
+        <fieldset>
+            <legend> Endereço </legend>
+            <label  for="tipo_endereco">Tipo:</label>
+            <select id="tipo_endereco">
+            <option value="">Selecione</option>
+            <option value="">Rua</option>
+            <option value="">Estrada</option>
+            <option value="">Rodovia</option>
+            <option value="">Outros</option>
+            </select><br>
+            <label for="logradouro_endereco">Logradouro:</label>
+            <input type="text" id="logradouro_endereco" required><br>
+            <label for="numero_endereco">Número:</label>
+            <input type="text" id="numeroendereco"><br>
+            <label for="complemento_endereco">Complemento</label>
+            <input type="text" id="complemento_endereco"><br>
+        </fieldset>
+        <fieldset>
+            <legend> Fale Conosco </legend>
+            <label for="msg">Mensagem</label>
+            <textarea type="text" id="msg"></textarea>
+        </fieldset>
+        <fieldset>
+            <button class="botao" type="submit" > Enviar os Dados </button>
+            <button type="reset"> Limpe os Dados </button>
+        </fieldset>
+    </form>
+    <script>
+        // const botao = document.getElementsByClassName('.botao') {
+        //     botao.onclick = window.alert('Seus Dados Foram Enviados')
+        // }
+    </script>
+</body>
+</html>
+<!-- 
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos beatae qui tenetur nobis dolorum, enim in eius, vitae culpa eum assumenda natus quo, aliquam ea mollitia excepturi. Corrupti, nihil quia. -->
